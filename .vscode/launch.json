@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug kthLargeNum",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}", // 執行剛才編譯產生的程式
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb", // Mac 上通常使用 lldb
+            "preLaunchTask": "build_kthLargeNum" // 在偵錯前先執行這個任務，任務名稱要和 tasks.json 裡面的 label 一致
+        }
+    ]
+}
